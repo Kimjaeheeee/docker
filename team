@@ -1,0 +1,12 @@
+service hello
+{
+   type = UNLISTED
+   socket_type     = stream
+   disable         = no
+   flags           = REUSE
+   wait            = no
+   user            = root
+   server          = /usr/local/bin/hello
+   port            = 11111
+   protocol        = tcp
+}
